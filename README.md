@@ -14,6 +14,7 @@
     - [1. Source-Specific Production Characteristics](#1-source-specific-production-characteristics)
     - [2. Grid Stability Implications](#2-grid-stability-implications)
     - [3. 📈  Historical Production Trends (2020-2024)](#3---historical-production-trends-2020-2024)
+  - [SQL](#sql)
   - [🛠️ Technologies](#️-technologies)
   - [👤 Authors](#-authors)
 
@@ -49,7 +50,9 @@ france-renewable-energy-analysis/
 │   ├── 1_eda_univariate.ipynb        # Univariate analysis
 │   ├── 2_data_cleaning.ipynb         # Handling timestamps, missing values, preprocessing
 │   ├── 3_eda_bivariate.ipynb         # Bivariate and multivariate analysis
+├── sql/                              # Files related to the sql querries
 │   ├── querries.sql                  # SQL business querries based on multivariate analysis
+│   ├── sql/csv_to_db.py              # Convert cleaned csv into db
 ├── requirements.txt                  # Python dependencies
 └── README.md                         # Project documentation
 ```
@@ -116,6 +119,16 @@ Analysis reveals an oscillating growth pattern with an overall upward trajectory
 *   Successful capacity additions despite year-to-year fluctuations.
 *   Potential influence of external factors such as grid constraints or weather anomalies.
 *   A need for deeper investigation into the specific causes of annual deviations.
+
+## SQL
+
+```bash
+sqlite3 renewable.db
+```
+
+```sql
+
+```
 
 
 ## 🛠️ Technologies
