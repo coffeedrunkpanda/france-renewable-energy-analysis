@@ -10,7 +10,10 @@
   - [📂 Repository Structure](#-repository-structure)
   - [🚀 Getting Started](#-getting-started)
     - [Installation](#installation)
-  - [📈 Key Analyses](#-key-analyses)
+  - [💡 Key Insights](#-key-insights)
+    - [1. Source-Specific Production Characteristics](#1-source-specific-production-characteristics)
+    - [2. Grid Stability Implications](#2-grid-stability-implications)
+    - [3. 📈  Historical Production Trends (2020-2024)](#3---historical-production-trends-2020-2024)
   - [🛠️ Technologies](#️-technologies)
   - [👤 Authors](#-authors)
 
@@ -84,8 +87,35 @@ jupyter notebook eda-univariate.ipynb
 
 > Note: Before executing the `eda-bivariate.ipynb`, execute the `data-cleaning.ipynb`, to obtain the cleaned and preprocessed csv file.
 
-## 📈 Key Analyses
-The project covers the following aspects:
+## 💡 Key Insights
+
+This exploratory analysis reveals critical insights into renewable energy production patterns that
+directly impact grid management strategies and investment decisions.
+
+### 1. Source-Specific Production Characteristics
+![alt text](images/average_production_by_season_source.png)
+The analysis highlights distinct behaviors between wind and solar generation:
+
+*   🌬️ **Wind Energy:**
+    *   **Seasonality:** Exhibits strong seasonal variation with peak output during winter months and significant decline in summer.
+    *   **Volatility:** High volatility characterized by frequent outliers and a right-skewed distribution.
+    *   **Grid Impact:** Inherent unpredictability poses challenges for load forecasting and dispatch planning.
+*   ☀️ **Solar Energy:**
+    *   **Predictability:** Demonstrates near-Gaussian distribution with more predictable behavior.
+    *   **Reliability:** Winter production decreases are moderate compared to wind’s seasonal swings. Lower outlier frequency suggests higher reliability for baseline capacity planning.
+
+### 2. Grid Stability Implications
+![alt text](images/production_histogram_by_source.png)
+The current wind-to-solar generation mix presents stability concerns during periods where both sources experience simultaneous low production. Strategic pathways include:
+*   **Short-term:** Integration of dispatchable sources (battery storage, gas/coal) to address intermittency gaps and meet demand surges.
+*   **Medium-term:** Expansion of solar capacity to improve generation predictability and reduce portfolio variance, alongside exploration of alternative dispatchable sources like nuclear or hydroelectric.
+
+### 3. 📈  Historical Production Trends (2020-2024)
+![alt text](images/mean_production_years.png)
+Analysis reveals an oscillating growth pattern with an overall upward trajectory, indicating:
+*   Successful capacity additions despite year-to-year fluctuations.
+*   Potential influence of external factors such as grid constraints or weather anomalies.
+*   A need for deeper investigation into the specific causes of annual deviations.
 
 
 ## 🛠️ Technologies
