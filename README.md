@@ -1,6 +1,7 @@
 # France Renewable Energy Analysis
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Status](https://img.shields.io/badge/Status-Analysis-green)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat&logo=sqlite&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Complete-green)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Data](https://img.shields.io/badge/Data-Kaggle-blue)
 
@@ -50,8 +51,8 @@ france-renewable-energy-analysis/
 │   ├── 1_eda_univariate.ipynb        # Univariate analysis
 │   ├── 2_data_cleaning.ipynb         # Handling timestamps, missing values, preprocessing
 │   ├── 3_eda_bivariate.ipynb         # Bivariate and multivariate analysis
-├── sql/                              # Files related to the sql querries
-│   ├── querries.sql                  # SQL business querries based on multivariate analysis
+├── sql/                              # Files related to the sql queries
+│   ├── queries.sql                  # SQL business queries based on multivariate analysis
 │   ├── sql/csv_to_db.py              # Convert cleaned csv into db
 ├── requirements.txt                  # Python dependencies
 └── README.md                         # Project documentation
@@ -122,21 +123,25 @@ Analysis reveals an oscillating growth pattern with an overall upward trajectory
 
 ## SQL
 
+To convert the csv file to db, run from the root directory:
+```bash
+python sql/csv_to_db.py
+```
+
+Open the db in your terminal:
+
 ```bash
 sqlite3 renewable.db
 ```
 
-```sql
-
-```
-
+Now you can run the queries stored in the `queries.sql` file one by one.
 
 ## 🛠️ Technologies
 Pandas & NumPy: Data manipulation and cleaning.
 
 Matplotlib & Seaborn: Static visualizations and statistical plots.
 
-SQL (SQLite): specific querries
+SQL (SQLite): specific queries
 
 ## 👤 Authors
 
